@@ -1,3 +1,42 @@
+body {
+  max-width: 600px;
+  width: 100%;
+
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .feil {
   color: red;
+}
+
+.flag {
+  font-size: large;
+  margin-top: 50px;
+}
+
+#flagform {
+  margin-top: 100px;
+}
+
+label {
+  display: block;
+}
+
+button[type='submit'] {
+  display: block;
+  margin: 0 auto;
+}
+
+p,
+label,
+input,
+button {
+  margin: 7px;
+}
+
+button {
+  font-size: large;
+  width: 100px;
 }
