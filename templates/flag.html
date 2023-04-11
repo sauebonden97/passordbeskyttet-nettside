@@ -1,0 +1,17 @@
+{% extends "_base.html" %} {% block title %}Login Page{% endblock %} {% block
+body %}
+<div>
+  <form action="/flag" method="POST">
+    {% if feil %}
+    <p class="feil">{{ feil }}</p>
+    {% endif %}
+    <label for="passord">Passord</label>
+    <input type="text" name="passord" />
+    <button type="submit">Login</button>
+  </form>
+
+  {% if flag %}
+  <p>Her er flagget mitt: {{ flag }}</p>
+  {% endif %}
+</div>
+{% endblock %}
